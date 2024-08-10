@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET FIT AHL-E-JALAL Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>GET FIT AHL-E-JALAL</h1>
+        <nav>
+            <button id="login-btn">Login</button>
+            <button id="home-btn">Home</button>
+            <button id="leaderboard-btn">Leaderboard</button>
+            <button id="calendar-btn">Calendar</button>
+            <button id="charts-btn">Charts</button>
+        </nav>
+    </header>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Login Portal</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <div id="dashboard">
+            <section id="leaderboard" class="hidden">
+                <h2>Leaderboard</h2>
+                <table id="leaderboard-table">
+                    <!-- Leaderboard data will be injected here -->
+                </table>
+            </section>
+
+            <section id="calendar" class="hidden">
+                <h2>Calendar View</h2>
+                <div id="calendar-view">
+                    <!-- Calendar view and daily log data will be injected here -->
+                </div>
+            </section>
+
+            <section id="charts" class="hidden">
+                <h2>Charts</h2>
+                <canvas id="pie-chart"></canvas>
+                <canvas id="bar-chart"></canvas>
+                <canvas id="line-chart"></canvas>
+                <canvas id="gauge-chart"></canvas>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <button id="edit-btn">Edit</button>
+        <button id="reset-btn">Reset</button>
+        <button id="save-btn">Save</button>
+        <button id="export-btn">Export</button>
+        <div id="loading-indicator" class="hidden">Loading...</div>
+    </footer>
+</body>
+</html>

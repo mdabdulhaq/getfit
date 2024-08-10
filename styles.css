@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav button {
+    background: #fff;
+    color: #4CAF50;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#login-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+}
+
+#dashboard {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#loading-indicator {
+    display: none;
+    color: red;
+}
